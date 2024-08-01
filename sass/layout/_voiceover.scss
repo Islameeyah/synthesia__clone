@@ -1,0 +1,23 @@
+#voiceover-section {
+    background: $color-grey-dark-1 ;
+    // display: flex;
+    padding: 10rem 15rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+
+
+
+    img {
+        border-radius: 3rem;
+        border-bottom-right-radius: 10rem;
+    
+    }
+
+   
+}
+.fa-check-circle {
+    color: $color-secondary-light;
+    margin-right: 5px;
+    font-size: 15px;
+}

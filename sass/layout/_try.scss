@@ -1,0 +1,43 @@
+#try-section {
+    background-image: url(/img/Hero-Module.svg);
+    padding-top: 10rem;
+    // padding-left: 10rem;
+  }
+
+  .try{
+
+    &__description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    }
+
+    &__content {
+        // width: 70%;
+        margin-left: 15rem;
+
+    }
+
+    &__flex-btn {
+        display: flex;
+        gap: 1rem ;
+        
+    }
+
+    &__video {
+        background-image: url(/img/prefooter-UI-p-1600.webp);
+        // width: 55%;
+        position: relative;
+        // padding-top: 3rem;
+        // width: 90%;
+        height: 70vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+
+  
+  }

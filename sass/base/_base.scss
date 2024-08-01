@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+
+    box-sizing: inherit;
+}
+
+
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+    box-sizing: border-box;
+
+
+    
+    @include respond(tab-land) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+
+    @include respond(tab-port) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
+}
+
+body {
+    
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        line-height: 1.9;
+        overflow-x: hidden;
+        
+      
+    
+
+    // @include respond(tab-port) {
+    //     padding: 0;
+    // }
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.section {
+    transition: transform 1s, opacity 1s;
+    margin-bottom: 15rem;
+  
+  &__title {
+    // max-width: 73.6rem;
+    text-align: center;
+    margin: 8rem auto 8rem auto;
+
+    @include respond(phone) {
+      // margin: 0;
+  }
+
+    
+
+    &--white {
+      background-color: $color-white;
+    }
+  }
+  
+  &__description {
+    font-weight: 600;
+
+    &--grey {
+      @include description;
+        color: $color-secondary-light;
+      background: $color-grey-dark-1;  
+    }
+
+    &--template {
+      @include description;
+      background-color: $color-indigo-light;
+      color: $color-grey-light-1;
+    }
+
+    &--white {
+      @include description;
+      background-color: $color-white;
+      color: $color-secondary-light;
+    }
+  }
+  
+  &__header {
+    font-size: 5.5rem;
+    font-weight: 500;
+    line-height: 5.5rem;
+    margin-top: 5rem;
+
+    
+    @include respond(phone) {
+      font-size: 3rem;
+      margin-top: 2rem;
+  }
+
+
+
+    &--template {
+      color: $color-white;
+    }
+
+  }
+}
+
+#section-1 {
+  background-color: $color-white;
+}
+

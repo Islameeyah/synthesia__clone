@@ -1,0 +1,25 @@
+#template2-section {
+    background-image: url(/img/template-section-bg.webp) ;
+    margin: 0 5rem;
+    padding: 3rem 5rem ;
+    border-radius: 3rem;
+}
+
+.template2__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    iframe {
+        border-radius: 2rem;
+    }
+    p {
+        color: $color-white;
+        font-size: 2rem;
+    }
+}
+
+.template2--header {
+    color: $color-white;
+    text-align: center;
+}

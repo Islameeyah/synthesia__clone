@@ -1,0 +1,33 @@
+#integration-section {
+    margin: 10rem 15rem;
+    background-color: $color-white;
+
+    
+}
+.integration {
+    &__contents {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+    }
+}
+
+.content-1 {
+    width: 60%;
+    // margin-right: 20rem;
+}
+
+
+.content-2 {
+    width: 35%;
+    padding-top: 8rem;
+    // margin-right: 10rem;
+    letter-spacing: 0.25rem;
+}
+
+.integrations-logo-row-img {
+    max-width: 8rem;
+    min-width: 8rem;
+    max-height: 8rem;
+    min-height: 8rem;
+}

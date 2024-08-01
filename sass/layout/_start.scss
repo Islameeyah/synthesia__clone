@@ -1,0 +1,16 @@
+#start-section {
+    background-image: url(/img/background-image.svg);
+    border-radius: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    margin: 0 10rem;
+    padding:  5rem;
+    align-items: center;
+
+
+    iframe {
+        border-radius: 3rem;
+        border-bottom-right-radius: 15rem;
+    }
+}

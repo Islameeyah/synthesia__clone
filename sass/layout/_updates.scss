@@ -1,0 +1,32 @@
+#updates-section {
+    display: flex;
+    margin: 10rem;
+    justify-content: space-between;
+}
+
+.updates {
+    &__title {
+        width: 45%;
+        // flex-direction: flex-start;
+    }
+
+    &__video {
+        // height: 20vh;
+        width: 50%;
+        // border-radius: 10rem;
+        // height: 450px;
+        // width: 200px;
+        // overflow-x: hidden;
+        video {
+            width: 702px;
+            height: 395px;
+            border-radius: 10px;
+        }
+
+    }
+    
+
+
+   
+}
+
