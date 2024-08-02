@@ -135,6 +135,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .heading-2 {
     font-size: 4rem;
+    line-height: 4rem;
   }
 }
 
@@ -173,17 +174,37 @@ body {
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
 }
+@media only screen and (max-width: 56.25em) {
+  .u-margin-bottom-medium {
+    margin-bottom: 3rem !important;
+  }
+}
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
+}
+@media only screen and (max-width: 56.25em) {
+  .u-margin-bottom-big {
+    margin-bottom: 5rem !important;
+  }
 }
 
 .u-margin-top-medium {
   margin-top: 3.5rem !important;
 }
+@media only screen and (max-width: 56.25em) {
+  .u-margin-top-medium {
+    margin-top: 2rem;
+  }
+}
 
 .u-margin-top-huge {
   margin-top: 10rem !important;
+}
+@media only screen and (max-width: 56.25em) {
+  .u-margin-top-huge {
+    margin-top: 5rem;
+  }
 }
 
 .padding {
@@ -684,12 +705,6 @@ img {
   border-radius: 2rem;
   font-size: 1.6rem;
 }
-@media only screen and (max-width: 37.5em) {
-  #template-section {
-    margin: 0 1rem;
-    padding: 2rem 4rem;
-  }
-}
 @media only screen and (max-width: 75em) {
   #template-section {
     margin: 0 1rem;
@@ -697,7 +712,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 75em) {
   .template {
     display: flex;
     flex-direction: column-reverse;
@@ -707,12 +722,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
-@media only screen and (max-width: 37.5em) {
-  .template__tab--container {
-    flex-direction: column;
-  }
-}
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 75em) {
   .template__tab--container {
     flex-direction: column;
   }
@@ -727,21 +737,10 @@ img {
   opacity: 0.5;
   padding: 2rem;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 75em) {
   .template__tab {
     width: 100%;
     padding: 1rem;
-    margin-bottom: 2rem;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .template__tab {
-    width: 90%;
-    margin-bottom: 2rem;
-  }
-}
-@media only screen and (max-width: 75em) {
-  .template__tab {
     margin-bottom: 2rem;
   }
 }
@@ -768,6 +767,7 @@ img {
 }
 .template__video--active {
   display: flex;
+  margin-top: 3rem;
 }
 
 #template2-section {
