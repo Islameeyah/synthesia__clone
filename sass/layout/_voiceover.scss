@@ -1,16 +1,29 @@
 #voiceover-section {
     background: $color-grey-dark-1 ;
     // display: flex;
-    padding: 10rem 15rem;
+    padding: 5rem 10rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10rem;
 
-
+    @include respond(tab-land) {
+        // padding: 4rem 7rem;
+        display: flex;
+        flex-direction: column;
+    }
+    @include respond(phone) {
+        // padding: 4rem 7rem;
+        display: flex;
+        flex-direction: column;
+    }
 
     img {
         border-radius: 3rem;
         border-bottom-right-radius: 10rem;
+
+        @include respond(tab-land) {
+            margin-top: -5rem;
+        }
     
     }
 

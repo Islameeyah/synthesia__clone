@@ -2,6 +2,10 @@
     display: flex;
     margin: 10rem;
     justify-content: space-between;
+
+    @include respond(tab-port) {
+        margin: 2rem;
+    }
 }
 
 .updates {

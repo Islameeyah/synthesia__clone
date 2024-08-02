@@ -132,7 +132,7 @@ body {
   line-height: 8.8rem;
   color: #333b52;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 75em) {
   .heading-2 {
     font-size: 4rem;
     line-height: 4rem;
@@ -705,6 +705,12 @@ img {
   border-radius: 2rem;
   font-size: 1.6rem;
 }
+@media only screen and (max-width: 37.5em) {
+  #template-section {
+    margin: 0 1rem;
+    padding: 2rem 4rem;
+  }
+}
 @media only screen and (max-width: 75em) {
   #template-section {
     margin: 0 1rem;
@@ -712,19 +718,26 @@ img {
   }
 }
 
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 56.25em) {
   .template {
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 3rem;
   }
 }
 .template__tab--container {
   display: flex;
   justify-content: space-between;
 }
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 56.25em) {
   .template__tab--container {
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .template__tab--container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .template__tab {
@@ -737,10 +750,9 @@ img {
   opacity: 0.5;
   padding: 2rem;
 }
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 56.25em) {
   .template__tab {
-    width: 100%;
-    padding: 1rem;
+    width: 90%;
     margin-bottom: 2rem;
   }
 }
@@ -957,12 +969,21 @@ img {
   flex-direction: column;
   margin: 10rem;
 }
+@media only screen and (max-width: 75em) {
+  #roi-section {
+    margin: 2rem;
+  }
+}
 
 .roi__card--container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 3rem;
+}
+@media only screen and (max-width: 75em) {
+  .roi__card--container {
+    flex-direction: column;
+  }
 }
 .roi--card {
   background-color: #f5f8ff;
@@ -972,15 +993,31 @@ img {
   border: 5px solid #f5f8ff;
   padding-top: 3rem;
 }
+@media only screen and (max-width: 75em) {
+  .roi--card {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
 .roi--card span {
   font-weight: bold;
 }
 .roi--card h1 {
   margin-top: -4rem;
 }
+@media only screen and (max-width: 75em) {
+  .roi--card h1 {
+    margin-top: -2rem;
+  }
+}
 .roi--card p {
   font-size: 1.7rem;
   margin: 3rem 0;
+}
+@media only screen and (max-width: 56.25em) {
+  .roi--card p {
+    margin: 1rem 0;
+  }
 }
 .roi--card a {
   color: #3e57da;
@@ -1003,6 +1040,11 @@ img {
   display: flex;
   margin: 10rem;
   justify-content: space-between;
+}
+@media only screen and (max-width: 56.25em) {
+  #updates-section {
+    margin: 2rem;
+  }
 }
 
 .updates__title {
@@ -1047,14 +1089,25 @@ img {
 
 #voiceover-section {
   background: #f5f8ff;
-  padding: 10rem 15rem;
+  padding: 5rem 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10rem;
 }
+@media only screen and (max-width: 75em) {
+  #voiceover-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #voiceover-section img {
   border-radius: 3rem;
   border-bottom-right-radius: 10rem;
+}
+@media only screen and (max-width: 75em) {
+  #voiceover-section img {
+    margin-top: -5rem;
+  }
 }
 
 .fa-check-circle {

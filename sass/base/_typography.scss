@@ -19,7 +19,7 @@
     line-height: 8.8rem;
     color: $color-grey-dark-2;
 
-    @include respond(phone) {
+    @include respond(tab-land) {
         // letter-spacing: 1rem;
         font-size: 4rem;
         line-height: 4rem;
