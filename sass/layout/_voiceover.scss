@@ -10,11 +10,14 @@
         // padding: 4rem 7rem;
         display: flex;
         flex-direction: column;
+        padding: 0 2rem;
     }
     @include respond(phone) {
         // padding: 4rem 7rem;
         display: flex;
         flex-direction: column;
+        padding: 0 2rem;
+        margin-top: -7rem;
     }
 
     img {

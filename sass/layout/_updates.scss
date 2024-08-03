@@ -3,34 +3,68 @@
     margin: 10rem;
     justify-content: space-between;
 
+    @include respond(phone) {
+        margin: 2rem;
+        flex-direction: column;
+        
+    }
     @include respond(tab-port) {
         margin: 2rem;
+        flex-direction: column;
+        
+        
+    }
+    @include respond(tab-land) {
+        margin: 2rem;
+        display: flex;
+        
+        
     }
 }
 
 .updates {
+    @include respond(phone) {
+        width: 100%;
+    }
+
+    @include respond(tab-port) {
+        width: 100%;
+    }
+  
+    
     &__title {
         width: 45%;
-        // flex-direction: flex-start;
+
+        @include respond(phone) {
+            width: 100%
+
+        }
+
+        @include respond(tab-port) {
+            width: 100%
+
+        }
+      
+        
     }
 
     &__video {
         // height: 20vh;
         width: 50%;
-        // border-radius: 10rem;
-        // height: 450px;
-        // width: 200px;
-        // overflow-x: hidden;
-        video {
-            width: 702px;
-            height: 395px;
+       
+            @include respond(phone) {
+                margin-top: 2rem;
+                width: 100%;
+            }
+            @include respond(tab-port) {
+                margin-top: 2rem;
+                width: 100%;
+            }
+            // width: 702px;
+            // height: 395px;
             border-radius: 10px;
-        }
+        
 
-    }
-    
-
-
-   
+    }   
 }
 

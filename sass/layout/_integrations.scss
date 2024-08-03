@@ -1,6 +1,10 @@
 #integration-section {
     margin: 10rem 15rem;
-    background-color: $color-white;
+    background-color: $color-white; 
+
+    @include respond(tab-port) {
+        margin:5rem 1rem;
+    }
 
     
 }
@@ -9,12 +13,19 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 5rem;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            width: 100% !important;
+        }
     }
 }
 
 .content-1 {
     width: 60%;
-    // margin-right: 20rem;
+    @include respond(tab-port) {
+        width: 100%;
+    }
 }
 
 
@@ -23,6 +34,11 @@
     padding-top: 8rem;
     // margin-right: 10rem;
     letter-spacing: 0.25rem;
+
+
+    @include respond(tab-port) {
+        width: 100%;
+    }
 }
 
 .integrations-logo-row-img {

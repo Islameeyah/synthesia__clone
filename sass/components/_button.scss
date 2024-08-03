@@ -25,6 +25,12 @@
         border: none;
         cursor: pointer;
 
+        @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+            align-items: center;
+        }
+
         
     }
 
@@ -159,5 +165,11 @@
     //Change for the <button> element
     border: none;
     cursor: pointer;
+
+    @include respond(tab-port) {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
     
     }

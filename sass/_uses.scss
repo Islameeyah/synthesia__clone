@@ -1,13 +1,10 @@
 .uses{
-    // background: #f5f8ff;
 
     &__card {
          display: none;
          background: $color-grey-dark-1;
          padding: 5.6rem;
-        // opacity: 0;
 
-        
         @include respond(phone) {
             padding: 1rem;
         }
@@ -18,8 +15,7 @@
         }
     }
 
-         &__card--active{
-            // background: #f5f8ff;
+        &__card--active{
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -38,10 +34,7 @@
         @include respond(tab-land) {
             flex-direction: column;
         }
-
-            
-
-        }
+    }
         
     
 
@@ -91,14 +84,7 @@
             // margin-top: 5rem;
         }
     }
-  
-
-     
-    // &--active {
-    //     background-color: #0d0f2d;
-    //     color: #ffffff;
-       
-    // }
+ 
 button {
     
     @include respond(phone) {

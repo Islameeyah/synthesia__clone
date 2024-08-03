@@ -38,6 +38,10 @@ body {
         font-weight: 300;
         line-height: 1.9;
         overflow-x: hidden;
+
+        @include respond(tab-port) {
+          // line-height: 1;
+      }
         
       
     

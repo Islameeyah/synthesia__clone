@@ -8,9 +8,39 @@
     padding:  5rem;
     align-items: center;
 
+    @include respond(tab-port) {
+        margin: 2rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include respond(tab-land) {
+        margin: 2rem;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+    @include respond(desktop) {
+        margin: 2rem;
+        padding: 3rem;
+        display: flex;
+        // flex-direction: c;
+    }
+
+
+
 
     iframe {
         border-radius: 3rem;
         border-bottom-right-radius: 15rem;
+
+        @include respond(phone) {
+            width: fit-content;
+        }
+
+        @include respond(tab-land) {
+            width: 80vw;
+        }
     }
 }

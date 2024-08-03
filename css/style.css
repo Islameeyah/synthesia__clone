@@ -52,7 +52,6 @@ body {
   line-height: 1.9;
   overflow-x: hidden;
 }
-
 ::selection {
   background-color: #656c86;
   color: #fff;
@@ -249,6 +248,13 @@ body {
   border: none;
   cursor: pointer;
 }
+@media only screen and (max-width: 56.25em) {
+  .btn, .btn:link, .btn:visited {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}
 .btn:hover {
   transform: translateX(-3px);
 }
@@ -307,6 +313,13 @@ body {
   align-items: center;
   border: none;
   cursor: pointer;
+}
+@media only screen and (max-width: 56.25em) {
+  :link {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .navbar {
@@ -456,21 +469,42 @@ body {
   margin: 10rem 15rem;
   background-color: #fff;
 }
+@media only screen and (max-width: 56.25em) {
+  #integration-section {
+    margin: 5rem 1rem;
+  }
+}
 
 .integration__contents {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .integration__contents {
+    flex-direction: column;
+    width: 100% !important;
+  }
+}
 
 .content-1 {
   width: 60%;
+}
+@media only screen and (max-width: 56.25em) {
+  .content-1 {
+    width: 100%;
+  }
 }
 
 .content-2 {
   width: 35%;
   padding-top: 8rem;
   letter-spacing: 0.25rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .content-2 {
+    width: 100%;
+  }
 }
 
 .integrations-logo-row-img {
@@ -693,9 +727,35 @@ img {
   padding: 5rem;
   align-items: center;
 }
+@media only screen and (max-width: 56.25em) {
+  #start-section {
+    margin: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 75em) {
+  #start-section {
+    margin: 2rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
 #start-section iframe {
   border-radius: 3rem;
   border-bottom-right-radius: 15rem;
+}
+@media only screen and (max-width: 37.5em) {
+  #start-section iframe {
+    width: fit-content;
+  }
+}
+@media only screen and (max-width: 75em) {
+  #start-section iframe {
+    width: 80vw;
+  }
 }
 
 #template-section {
@@ -1041,22 +1101,63 @@ img {
   margin: 10rem;
   justify-content: space-between;
 }
+@media only screen and (max-width: 37.5em) {
+  #updates-section {
+    margin: 2rem;
+    flex-direction: column;
+  }
+}
 @media only screen and (max-width: 56.25em) {
   #updates-section {
     margin: 2rem;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 75em) {
+  #updates-section {
+    margin: 2rem;
+    display: flex;
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .updates {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .updates {
+    width: 100%;
+  }
+}
 .updates__title {
   width: 45%;
 }
+@media only screen and (max-width: 37.5em) {
+  .updates__title {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .updates__title {
+    width: 100%;
+  }
+}
 .updates__video {
   width: 50%;
-}
-.updates__video video {
-  width: 702px;
-  height: 395px;
   border-radius: 10px;
+}
+@media only screen and (max-width: 37.5em) {
+  .updates__video {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .updates__video {
+    margin-top: 2rem;
+    width: 100%;
+  }
 }
 
 #try-section {
@@ -1098,6 +1199,15 @@ img {
   #voiceover-section {
     display: flex;
     flex-direction: column;
+    padding: 0 2rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  #voiceover-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    margin-top: -7rem;
   }
 }
 #voiceover-section img {
