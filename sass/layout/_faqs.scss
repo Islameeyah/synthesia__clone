@@ -4,15 +4,28 @@
     display: flex;
     justify-content: space-between;
 
+    @include respond(tab-port) {
+        margin: 5rem 3rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
     
 }
 .faqs {
     &__contents {
         width: 35%;
+        @include respond(tab-port) {
+            width: 100%;
+        }
     }
 
     &__flex--containers {
         width: 55%;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
       
     }
 

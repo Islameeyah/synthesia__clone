@@ -175,7 +175,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .u-margin-bottom-medium {
-    margin-bottom: 3rem !important;
+    margin-bottom: 2rem !important;
   }
 }
 
@@ -184,7 +184,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .u-margin-bottom-big {
-    margin-bottom: 5rem !important;
+    margin-bottom: 4rem !important;
   }
 }
 
@@ -520,20 +520,57 @@ body {
   margin: 10rem 15rem;
   background-color: #fff;
 }
+@media only screen and (max-width: 75em) {
+  #enterprise__section {
+    margin: 5rem 3rem;
+  }
+}
 #enterprise__section .fa {
   font-size: 2rem;
   color: #fff;
   padding: 5px;
   border-radius: 0.5rem;
 }
+#enterprise__section .test {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 56.25em) {
+  #enterprise__section .test .p1 {
+    width: 40%;
+  }
+}
+#enterprise__section .test i {
+  margin-right: 1rem;
+}
+#enterprise__section .test .text {
+  margin-left: 6rem;
+  text-align: center;
+}
 
 .enterprise__contents {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 37.5em) {
+  .enterprise__contents {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .enterprise__contents {
+    display: flex;
+  }
+}
 .enterprise__card {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 56.25em) {
+  .enterprise__card {
+    flex-direction: column;
+  }
 }
 .enterprise__card--content {
   background-color: #f5f8ff;
@@ -543,6 +580,12 @@ body {
   border: 5px solid #f5f8ff;
   padding-top: 3rem;
   display: flex;
+}
+@media only screen and (max-width: 56.25em) {
+  .enterprise__card--content {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 
 .fa {
@@ -563,6 +606,11 @@ body {
 
 .content-1 {
   width: 50%;
+}
+@media only screen and (max-width: 56.25em) {
+  .content-1 {
+    width: 100%;
+  }
 }
 .content-2 {
   width: 45%;
@@ -794,12 +842,6 @@ img {
     flex-direction: column;
   }
 }
-@media only screen and (max-width: 75em) {
-  .template__tab--container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 .template__tab {
   width: 24%;
   display: flex;
@@ -812,8 +854,8 @@ img {
 }
 @media only screen and (max-width: 56.25em) {
   .template__tab {
-    width: 90%;
-    margin-bottom: 2rem;
+    width: 100%;
+    margin-top: 2rem;
   }
 }
 .template__tab span {
@@ -848,11 +890,28 @@ img {
   padding: 3rem 5rem;
   border-radius: 3rem;
 }
+@media only screen and (max-width: 56.25em) {
+  #template2-section {
+    margin: 3rem;
+    padding: 1rem 2rem;
+  }
+}
 
 .template2__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .template2__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .template2__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .template2__container iframe {
   border-radius: 2rem;
@@ -978,12 +1037,29 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 56.25em) {
+  #faqs-section {
+    margin: 5rem 3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .faqs__contents {
   width: 35%;
 }
+@media only screen and (max-width: 56.25em) {
+  .faqs__contents {
+    width: 100%;
+  }
+}
 .faqs__flex--containers {
   width: 55%;
+}
+@media only screen and (max-width: 56.25em) {
+  .faqs__flex--containers {
+    width: 100%;
+  }
 }
 
 .question {
@@ -1029,11 +1105,6 @@ img {
   flex-direction: column;
   margin: 10rem;
 }
-@media only screen and (max-width: 75em) {
-  #roi-section {
-    margin: 2rem;
-  }
-}
 
 .roi__card--container {
   display: flex;
@@ -1056,7 +1127,6 @@ img {
 @media only screen and (max-width: 75em) {
   .roi--card {
     width: 100%;
-    margin-bottom: 3rem;
   }
 }
 .roi--card span {
@@ -1065,19 +1135,9 @@ img {
 .roi--card h1 {
   margin-top: -4rem;
 }
-@media only screen and (max-width: 75em) {
-  .roi--card h1 {
-    margin-top: -2rem;
-  }
-}
 .roi--card p {
   font-size: 1.7rem;
   margin: 3rem 0;
-}
-@media only screen and (max-width: 56.25em) {
-  .roi--card p {
-    margin: 1rem 0;
-  }
 }
 .roi--card a {
   color: #3e57da;
