@@ -21,11 +21,11 @@
     }
 
     img {
-        border-radius: 3rem;
-        border-bottom-right-radius: 10rem;
+        // border-radius: 3rem;
+        // border-bottom-right-radius: 10rem;
 
         @include respond(tab-land) {
-            margin-top: -5rem;
+            // margin-top: -5rem;
         }
     
     }
@@ -36,4 +36,47 @@
     color: $color-secondary-light;
     margin-right: 5px;
     font-size: 15px;
+}
+
+.voiceover {
+    &__videos {
+        position: relative;
+
+        .us{
+            background-color: aliceblue;
+            padding: .5rem 2rem;
+            border-radius: 1rem;
+            align-items: center;
+            display: flex;
+            text-transform: uppercase;
+
+            img {
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    &__parent--video img {
+         border-radius: 3rem;
+        border-bottom-right-radius: 10rem;
+        position: relative;
+    }
+
+    &__child  {
+        position: absolute;
+        // top: -10px;
+        bottom: 30px;
+        left: 10px;
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+
+        // // &img{
+        //     display: flex;
+        //     justify-content: space-between;
+        //     background-color: $color-white;
+        // }
+       
+    }
+
 }

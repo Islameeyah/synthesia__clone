@@ -3,6 +3,13 @@
     margin: 10rem;
     padding: 3rem 10rem ;
     border-radius: 3rem;
+        @include respond(tab-port) {
+         margin: 10rem 3rem;
+         padding: 3rem 2rem;
+            
+        }
+        
+    
   }
 
   .demo{
@@ -11,6 +18,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    
     }
 
     &__content {
@@ -19,6 +27,21 @@
         span {
           margin-right: 1rem;
           color: $color-primary;
+        }
+
+        .demo__images--phone {
+            display: none;
+        
+        //    .demo--phone {
+        //     display: none;
+        //    }
+        
+            @include respond(tab-port) {
+                display: flex;
+                   
+               }
+        
+        
         }
     }
 
@@ -45,8 +68,19 @@
     &__img {
         display: none;
 
+        // @include respond(tab-port) {
+        //     margin: 0 3rem;
+        //     padding: 1rem 2rem;
+               
+        //    }
+
         &--active {
             display: flex;
+
+            @include respond(tab-port) {
+               
+                   display: none;
+               }
         }
     }
 
@@ -65,6 +99,11 @@
     border-radius: 1rem;
     text-transform: uppercase;
 
+    // @include respond(tab-port) {
+    //     display: none;
+           
+    //    }
+
     &--active{
         background-color: $color-white;
         color: $color-secondary-light;
@@ -77,6 +116,20 @@
         cursor: pointer;
     }
 }
+// .demo__images--phone {
+//     display: none;
+
+//    .demo--phone {
+//     display: none;
+//    }
+
+//     @include respond(phone) {
+//         display: flex;
+           
+//        }
+
+
+// }
   }
 
   .table__content {
@@ -96,6 +149,8 @@
     
 }
 
+
+
 .footer {
     flex-direction: column;
     display: flex;
@@ -103,22 +158,32 @@
     padding: 10rem 5rem;
     color: $color-white;
     background: url(/img/template-section-bg.webp);
+
+    &--span {
+        color: $color-secondary-light;
+    }
 }
 .footer ul {
     list-style: none;
     
-    li a{
+    li {
         color: $color-white;
+        font-size: 1.5rem;
+        &:hover{
+            color: $color-secondary-light;
+        }
     }
 
 }
 .display1{
     width: 20%;
+    font-size: 1.5rem;
     // align-items: center;
     
 }
 .img-icon{
     display: flex;
+    
 }
 .footer__list-items{
     // display: grid;

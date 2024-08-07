@@ -20,7 +20,8 @@
 
        .p1 {
         @include respond(tab-port) {
-            width:40%;
+            width:80%;
+            margin-right: 0;
         }
        }
 
@@ -32,7 +33,7 @@
 
         .text {
             margin-left: 6rem;
-            text-align: center;
+            // text-align: center;
         }
     }
 }
@@ -109,9 +110,9 @@
         width: 45%;
         letter-spacing: -1px;
 
-        // @include respond(tab-port) {
-        //     width: 50%;
-        // }
+        @include respond(tab-port) {
+            width: 100%;
+        }
         
     }
 }
