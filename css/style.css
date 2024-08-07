@@ -389,6 +389,15 @@ body {
   background-image: url(/img/background-image.svg);
   overflow: hidden;
 }
+.container--wrap .paragraph {
+  width: 100%;
+  padding: 0 35rem;
+}
+@media only screen and (max-width: 75em) {
+  .container--wrap .paragraph {
+    padding: 0 2rem;
+  }
+}
 
 .header {
   display: flex;
@@ -529,14 +538,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
-@media only screen and (max-width: 37.5em) {
-  .enterprise__contents {
-    flex-direction: column;
-  }
-}
 @media only screen and (max-width: 75em) {
   .enterprise__contents {
-    display: flex;
+    flex-direction: column;
   }
 }
 .enterprise__card {
@@ -891,6 +895,15 @@ img {
   padding: 3rem 5rem;
   border-radius: 3rem;
 }
+#template2-section .section__header {
+  padding: 0 30rem;
+}
+@media only screen and (max-width: 75em) {
+  #template2-section .section__header {
+    padding: 0;
+    width: 100%;
+  }
+}
 .template2__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -949,14 +962,6 @@ img {
 .demo__content span {
   margin-right: 1rem;
   color: #656c86;
-}
-.demo__content .demo__images--phone {
-  display: none;
-}
-@media only screen and (max-width: 56.25em) {
-  .demo__content .demo__images--phone {
-    display: flex;
-  }
 }
 .demo__flex-btn {
   display: flex;
@@ -1131,6 +1136,21 @@ img {
   flex-direction: column;
   margin: 10rem;
 }
+@media only screen and (max-width: 75em) {
+  #roi-section {
+    margin: 1rem;
+  }
+}
+#roi-section .section__header {
+  width: 100%;
+  padding: 0 30rem;
+}
+@media only screen and (max-width: 75em) {
+  #roi-section .section__header {
+    padding: 0;
+    width: 100%;
+  }
+}
 
 .roi__card--container {
   display: flex;
@@ -1153,6 +1173,7 @@ img {
 @media only screen and (max-width: 75em) {
   .roi--card {
     width: 100%;
+    margin-bottom: 3rem;
   }
 }
 .roi--card span {

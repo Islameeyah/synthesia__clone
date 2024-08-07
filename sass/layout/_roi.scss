@@ -3,9 +3,18 @@
     flex-direction: column;
     margin: 10rem;
 
-    // @include respond(tab-land) {
-    //     margin: 2rem;
-    // }
+    @include respond(tab-land) {
+        margin: 1rem;
+    }
+
+    .section__header {
+        width: 100%;
+        padding: 0 30rem;
+        @include respond(tab-land) {
+            padding: 0;
+            width: 100%;
+        }
+    }
 }
 
 .roi {
@@ -16,6 +25,7 @@
 
         @include respond(tab-land) {
             flex-direction: column;
+            // margin-bottom: 2rem;
             
         }
     }
@@ -31,7 +41,7 @@
 
         @include respond(tab-land) {
             width: 100%;
-            // margin-bottom: 3rem;
+            margin-bottom: 3rem;
         }
          span {
             font-weight: bold;

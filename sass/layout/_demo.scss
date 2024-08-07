@@ -29,20 +29,7 @@
           color: $color-primary;
         }
 
-        .demo__images--phone {
-            display: none;
-        
-        //    .demo--phone {
-        //     display: none;
-        //    }
-        
-            @include respond(tab-port) {
-                display: flex;
-                   
-               }
-        
-        
-        }
+
     }
 
     &__flex-btn {
