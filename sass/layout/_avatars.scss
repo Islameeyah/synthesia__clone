@@ -10,7 +10,7 @@
     // padding: 4rem 7rem;
     display: flex;
     flex-direction: column;
-    padding: 0 2rem;
+    padding:  2rem;
   }
     .avatars{
       &__title {
@@ -22,8 +22,21 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
 
+      @include respond(phone) {
+        gap: .5rem;
+       
+      }
+
+      
+
       video{
         border-radius: 3rem;
+
+        @include respond(phone) {
+          height: 180px;
+          width: 190px;
+       
+        }
       }
     }
       

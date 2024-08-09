@@ -392,7 +392,7 @@ body {
 }
 .dropdown-content .dropdown-bottom p {
   color: #fff;
-  border-right: 1px solid black;
+  border-right: 1px solid wheat;
 }
 
 .navbar__list:hover .dropdown-content {
@@ -897,7 +897,7 @@ img {
   #avatars-section {
     display: flex;
     flex-direction: column;
-    padding: 0 2rem;
+    padding: 2rem;
   }
 }
 #avatars-section .avatars__title {
@@ -908,8 +908,19 @@ img {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
+@media only screen and (max-width: 37.5em) {
+  #avatars-section .avatars__video {
+    gap: 0.5rem;
+  }
+}
 #avatars-section .avatars__video video {
   border-radius: 3rem;
+}
+@media only screen and (max-width: 37.5em) {
+  #avatars-section .avatars__video video {
+    height: 180px;
+    width: 190px;
+  }
 }
 #avatars-section .fa-check-circle {
   color: #3e57da;
