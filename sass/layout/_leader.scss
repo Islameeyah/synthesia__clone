@@ -1,11 +1,37 @@
 #leader-section {
     display: flex;
     margin: 10rem 15rem;
+
+    
+
+    .grid{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+    //    margin-bottom: 2rem;
+    gap: 2rem;
+
+       p {
+        display: inline-flex;
+       }
+    }
+    // .grid-2 {
+    //     display: grid;
+    //     grid
+    // }
+    .grid-1 {
+        display: inline-flex;
+    }
+    .leader__title {
+        width: 45%;
+    }
 }
 
 
 
 .grid-image {
-    height: 60vh;
-    width: 40vw;
+    height: 70vh;
+    width: 45vw;
+    margin-left: 3rem;
+    justify-content: center;
 }
+

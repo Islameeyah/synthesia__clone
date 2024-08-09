@@ -1,64 +1,16 @@
-// const mobileMenu = document.getElementById('mobile-menu');
-// const navbarMenu = document.querySelector('.navbar-menu');
 
-// mobileMenu.addEventListener('click', () => {
-//     navbarMenu.classList.toggle('active');
-// });
+const linkBtns = document.querySelectorAll('#links__responsive')
+const hamburgerBtn = document.getElementById('nav__button')
 
-// //  // script to convert data-autoplay to autoplay as video plays in designer otherwise
-//  (function() {
-//     var grandparentVideo = document.currentScript.parentElement.parentElement;
-//     if (grandparentVideo && grandparentVideo.getAttribute('data-autoplay') === 'true') {
-//         grandparentVideo.setAttribute('autoplay', '');
-//     }
-// })();
-// // </script></div></video></div><div class="hero-video-script w-embed w-script"><script>
-// // Hero html Video
-// let videoContainer = document.querySelector("#hero-html-video");
-// let htmlVideo = document.querySelector("#hero-html-video video");
-// let playButton = document.querySelector(".video-button");
-// htmlVideo.muted = true;
+hamburgerBtn.addEventListener('click', (e) => {
+  e.preventDefault()
+  linkBtns.forEach(btns => {btns.classList.toggle('toggle')})
+})
 
-// videoContainer.addEventListener("click", handleVideoContainer);
 
-// function handleVideoContainer() {
-//   if (htmlVideo.muted === true) {
-//       htmlVideo.loop = false;
-//     htmlVideo.muted = false;
-//     htmlVideo.currentTime = 0.1;
-//     playButton.setAttribute("active", "true");
-//   } else {
-//     htmlVideo.muted = true;
-//     playButton.setAttribute("active", "false");
-//   }
-// }
 
-// // Reset video-button to initial state when video ends
-// htmlVideo.addEventListener("ended", (event) => {
-//   htmlVideo.muted = true;
-//   playButton.setAttribute("active", "false");
-//   // Log to ensure the event is triggered
-//   console.log("Video ended. Resetting playButton and replaying the video.");
-//   htmlVideo.play();
-// });
 
-// // Log to verify the play method is called
-// htmlVideo.addEventListener("play", (event) => {
-//   console.log("Video is playing.");
-// });
-// </script></div></div></div>
-
-// <video src=""></video>
-
-// const navLinks = document.querySelectorAll('.navbar__list');
-// navLinks.forEach((link) => {
-//   link.addEventListener('click', () => {
-//     const icon =link.querySelectorAll('navbar--icon');
-//     icon.classList.add('rotate');
-//   })
-// })
-
-// Tabbed component
+// <<<<<<<<<<<<<<<<<<<<<<< USES FUNCTIONALITY >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 const tabs = document.querySelectorAll('.uses__tab');
 const tabsContainer = document.querySelector('.uses__tab-container');
@@ -79,6 +31,8 @@ tabsContainer.addEventListener('click', function (e) {
 
 })
 
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<< TEMPLATE FUNCTIONALITY >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 const template = document.querySelectorAll('.template__tab');
 const templateContainer = document.querySelector('.template__tab--container');
 const templateContent = document.querySelectorAll('.template__video');
@@ -97,6 +51,8 @@ templateContainer.addEventListener('click', function (e) {
 })
 
 
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<< DEMO FUNCTIONALITY >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 const demoTabs = document.querySelectorAll('.demo__tab');
 const demoFlexBtn = document.querySelector('.demo--flex-btn')
 const demoTableContent = document.querySelectorAll('.table__content')
@@ -117,3 +73,55 @@ demoFlexBtn.addEventListener('click', function (e) {
   document.querySelector(`.demo__img--${tabClicked.dataset.tab}`).classList.add('demo__img--active')
 
 })
+
+// <<<<<<<<<<<<<<<<<<<<< VOIVEOVER FUNCTIONALITY >>>>>>>>>>>>>>>>>>>>>
+const languageBtns= document.querySelectorAll('.language__btn');
+const languageBtnContainer= document.querySelector('.voiceover__videos');
+const languageVideos = document.querySelectorAll('.language__video')
+
+
+languageBtnContainer.addEventListener('click', function(e) {
+  const btnsClicked = e.target.closest('.language__btn');
+
+  if(!btnsClicked) return;
+
+  // Remove active classes
+  languageBtns.forEach(btn => btn.classList.remove('language__btn--active'));
+  languageVideos.forEach(lang => lang.classList.remove('language__video--active'));
+
+  btnsClicked.classList.add('language__btn--active');
+
+  document.querySelector(`.language__video--${btnsClicked.dataset.tab}`).classList.add('language__video--active')
+})
+
+
+// <<<<<<<<<<<<<<<<<<<<<<<<<<< FAQS FUNCTIONALITY >>>>>>>>>>>>>>>>>>>>>>>>>>>
+document.addEventListener('DOMContentLoaded',function() {
+  const faqsTab = document.querySelectorAll('.faqs__flex--item')
+
+  faqsTab.forEach(item => {
+    const faqsQuestion = item.querySelector('.question');
+    const faqsAnswer = item.querySelector('.answer');
+    const faqsIcon = item.querySelector('.faqs__arrow--icon');
+
+    faqsQuestion.addEventListener('click', () => {
+      const open = faqsAnswer.style.display ==='block';
+
+      //close all question
+
+      document.querySelectorAll('.answer').forEach(ans => ans.style.display= 'none')
+
+      document.querySelectorAll('.faqs__arrow--icon').forEach(icon => icon.style.transform = 'rotate(0deg)');
+
+      if (open) {
+        faqsAnswer.style.display = 'none';
+        faqsIcon.style.transform = 'rotate(0deg)';
+
+      } else  {
+        faqsAnswer.style.display ='block';
+        faqsIcon.style.transform= 'rotate(-90deg)';
+      }
+    })
+  })
+})
+

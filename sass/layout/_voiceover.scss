@@ -39,11 +39,27 @@
 }
 
 .voiceover {
+
+    &__title {
+        align-content: center;
+    }
     &__videos {
         position: relative;
 
-        .us{
-            background-color: aliceblue;
+        .language__video{
+        
+            display: none;
+    
+            &--active{
+                display: flex;
+                position: relative;
+            }
+        
+             
+        }
+
+        .language__btn{
+            background-color: $color-white;
             padding: .5rem 2rem;
             border-radius: 1rem;
             align-items: center;
@@ -53,14 +69,22 @@
             img {
                 margin-right: .5rem;
             }
+            &--active {
+                background: black;
+                color: $color-white;
+            }
+            &:hover {
+             cursor: pointer;   
+            }
+        }
+
+        video {
+            border-radius: 3rem;
+            border-bottom-right-radius: 10rem;
         }
     }
 
-    &__parent--video img {
-         border-radius: 3rem;
-        border-bottom-right-radius: 10rem;
-        position: relative;
-    }
+  
 
     &__child  {
         position: absolute;
@@ -70,13 +94,6 @@
         display: flex;
         width: 90%;
         justify-content: space-between;
-
-        // // &img{
-        //     display: flex;
-        //     justify-content: space-between;
-        //     background-color: $color-white;
-        // }
-       
     }
 
 }

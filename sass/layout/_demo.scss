@@ -103,20 +103,7 @@
         cursor: pointer;
     }
 }
-// .demo__images--phone {
-//     display: none;
 
-//    .demo--phone {
-//     display: none;
-//    }
-
-//     @include respond(phone) {
-//         display: flex;
-           
-//        }
-
-
-// }
   }
 
   .table__content {
@@ -170,6 +157,8 @@
 }
 .img-icon{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     
 }
 .footer__list-items{
@@ -189,9 +178,15 @@
 //     // color: #000;
 // }
 
-// .address{
-//     width: 290px;
-// }
+.address{
+    width: 100%;
+    font-size: 30px;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    // align-self: center;
+    // text-align: center;
+}
 // .display5 .social{
 //     display: flex;
 // }

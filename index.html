@@ -17,8 +17,7 @@
                 <img src="img/main-logo.svg" alt="Synthesia Logo"  id="logo">
             </div>
             
-            <!-- <div class="navbar__wrapper"> -->
-                <ul class="navbar__menu">
+                <ul id="links__responsive" class="navbar__menu">
                     <li class="navbar__list"><a href="#">platform <i class='fas fa-angle-down navbar--icon'></i></a>
                         <div class="dropdown-content">
                             <div class="dropdown-top">
@@ -118,14 +117,12 @@
                     <li class="navbar__list"><a href="#">Enterprise</a></li>
                 </ul>
                 <div class="navbar__cta">
-                    <li class="navbar__login"><a href="#">Login</a></li>
-                    <li class="navbar__btn"><a href="#">Get Started</a></li>
+                    <li id="links__responsive" class="navbar__login"><a href="#">Login</a></li>
+                    <li id="links__responsive" class="navbar__login"><a href="#">Book demo</a></li>
+                    <!-- <li id="links__responsive" class="navbar__btn btn btn--blue"><a href="#">Get Started</a></li> -->
                 </div>
-            <!-- </div> -->
-          
-            <!-- <div class="navbar-toggle" id="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div> -->
+                <button id="nav__button"> <i class="fa fa-bars"></i></button>
+
         </nav>
         <div class="container--wrap padding">
             <div class="header">
@@ -148,7 +145,11 @@
                 </div>
 
                 <div id="header__html-video">
-                    <video poster="https://cdn.prod.website-files.com/65e89895c5a4b8d764c0d710/6655de5a9ea7063cc9b6684c_thumbnail.webp" muted="" playsinline="true" loop="" data-autoplay="true" class="html-video" autoplay=""><source src="https://webcdn.synthesia.io/home-hero-updated-voice.mp4" type="video/mp4"><img src="./AI Video -1_files/6655de5a9ea7063cc9b6684c_thumbnail.webp" title="Your browser does not support the <video> tag">
+                    <!-- <video poster="https://cdn.prod.website-files.com/65e89895c5a4b8d764c0d710/6655de5a9ea7063cc9b6684c_thumbnail.webp" muted="" playsinline="true" loop="" data-autoplay="true" class="html-video" autoplay=""><source src="https://webcdn.synthesia.io/home-hero-updated-voice.mp4" type="video/mp4"><img src="./AI Video -1_files/6655de5a9ea7063cc9b6684c_thumbnail.webp" title="Your browser does not support the <video> tag"> -->
+                        <div id="header__html-video">
+                            <video poster="https://cdn.prod.website-files.com/65e89895c5a4b8d764c0d710/66aca909607f3be842e77ac4_image%20(2).webp" playsinline="true" loop="" data-autoplay="true" muted class="html-video" autoplay=""><source src="https://webcdn.synthesia.io/HomeHeroVideos/02.08.24/Alex_NEW_WBHERO_1400px_2Mbps.webm" type="video/webm"><source src="https://webcdn.synthesia.io/HomeHeroVideos/02.08.24/Alex_NEW_WBHERO_comp.mp4" type="video/mp4"><img src="https://cdn.prod.website-files.com/65e89895c5a4b8d764c0d710/66aca909607f3be842e77ac4_image%20(2).webp" title="Your browser does not support the <video> tag">
+        
+                        </div>  
 
                 </div>  
             </div>
@@ -157,6 +158,12 @@
                 <h3 class="heading-3">Tested by over 50,000 companies by all sizes</h3>
                 <!-- <figure class="images--container"> -->
                     <marquee>
+                        <img src="img/Bestseller.svg" alt="Bestseller">
+                        <img src="img/Reuters.svg" alt="Reuters">
+                        <img src="img/Teleperformance.svg" alt="Teleperformance">
+                        <img src="img/Zoom.svg" alt="Zoom">
+                        <img src="img/Heineken.svg" alt="Heineken">
+                        <img src="img/Xerox.svg" alt="Xerox">
                         <img src="img/Bestseller.svg" alt="Bestseller">
                         <img src="img/Reuters.svg" alt="Reuters">
                         <img src="img/Teleperformance.svg" alt="Teleperformance">
@@ -405,7 +412,7 @@
                 <div class="roi--card">
                     <h4 class="heading-5">Xeron</h4>
                     <figure class="roi--text">
-                        <i class='fas fa-arrow-down'></i>
+                        <i class='fas fa-arrow-down fig'></i>
                         <span class="number">50</span>
                         <span class="percent">%</span>
                         <!-- <i class="fa fa-percent"></i> -->
@@ -421,7 +428,7 @@
                 <div class="roi--card">
                     <h4 class="heading-5">zoom</h4>
                     <figure class="roi--text">
-                        <i class='fas fa-arrow-up'></i>
+                        <i class='fas fa-arrow-up fig'></i>
                         <span>90</span>
                         <span class="percent">%</span>
                     </figure>
@@ -434,7 +441,7 @@
                 <div class="roi--card">
                     <h4 class="heading-5">B/S/H</h4>
                     <figure class="roi--text">
-                        <i class='fas fa-arrow-up'></i>
+                        <i class='fas fa-arrow-up fig'></i>
                         <span>30</span>
                         <span class="percent">%</span>
                     </figure>
@@ -449,12 +456,12 @@
         <div class="border-bottom"></div>
 
         <section class="section" id="avatars-section">
-            <div class="section__title">
+            <div class="avatars__title">
                 <h1 class="section__description--grey ">AI AVATARS</h1>
-                <h2 class="section__header ">Create AI videos as diverse as your audience</h2>
-                <p><i class="fa fa-check-circle"></i>Engage your viewers with over 160 AI avatars</p>
-                <p><i class="fa fa-check-circle"></i>Make your videos more inclusive and diverse</p>
-                <p><i class="fa fa-check-circle"></i>Create your own AI avatar (your digital twin)</p>
+                <h2 class="section__header u-margin-bottom-small">Create AI videos as diverse as your audience</h2>
+                <p class="u-margin-bottom-small heading-3"><i class="fa fa-check-circle"></i>Engage your viewers with over 160 AI avatars</p>
+                <p class="u-margin-bottom-small heading-3"><i class="fa fa-check-circle"></i>Make your videos more inclusive and diverse</p>
+                <p class="u-margin-bottom-small heading-3"><i class="fa fa-check-circle"></i>Create your own AI avatar (your digital twin)</p>
                 
                 <button>
                     <a href="#" class="btn">See all avatars  <i  class='fas'>&#xf061;</i></a>
@@ -463,7 +470,17 @@
             </div>
 
             <div class="avatars__video">
-                <video src="img/Free Trial.html"></video>
+                <video preload="auto" controls width="300px" height="250" data-src="https://webcdn.synthesia.io/v4-lp/V4-avatars/V4+-+Jaz.mp4" src="https://webcdn.synthesia.io/v4-lp/V4-avatars/V4+-+Jaz.mp4"  data-src-updated="true">
+                </video>
+
+                <video preload="auto" controls width="300px" height="250" data-src="https://webcdn.synthesia.io/v4-lp/V4-avatars/V4+-+Alex.mp4"  src="https://webcdn.synthesia.io/v4-lp/V4-avatars/V4+-+Alex.mp4" data-src-updated="true">
+                </video>
+
+                <video preload="auto" controls width="300px" height="250" data-src="https://webcdn.synthesia.io/v4-lp/V4-avatars/V4+-+Joshua.mp4" src="https://webcdn.synthesia.io/v4-lp/V4-avatars/V4+-+Joshua.mp4"  data-src-updated="true">
+                </video>
+
+                <video preload="auto" controls width="300px" height="250" data-src="https://webcdn.synthesia.io/v4-lp/V4-avatars/V4%20-%20Ada.mp4"  src="https://webcdn.synthesia.io/v4-lp/V4-avatars/V4%20-%20Ada.mp4" data-src-updated="true">
+                </video>
             </div>
         </section>
 
@@ -480,24 +497,37 @@
             </div>
          
             <div class="voiceover__videos">
-                <div class="voiceover__parent--video">
-                    <img src="img/thumbnail.webp" alt="" class="html-video">
+                <div class="language__video language__video--1 language__video--active">
+                    <video playsinline="true" controls class="html-video" src="https://webcdn.synthesia.io/previous2024/language_demos/languages_basic/en-US.mp4"><source type="video/mp4"></video>
                 </div>
+                
+                <div class="language__video language__video--2">
+                    <video playsinline="true" controls class="html-video" src="https://webcdn.synthesia.io/previous2024/language_demos/languages_basic/de-DE.mp4"><source type="video/mp4"></video>
+                </div>
+
+                <div class="language__video language__video--3">
+                   <video playsinline="true" controls class="html-video" src="https://webcdn.synthesia.io/previous2024/language_demos/languages_basic/fr-FR.mp4"><source type="video/mp4"></video>
+                </div>
+                <div class="language__video language__video--4">
+                    <video playsinline="true" controls class="html-video" src="https://webcdn.synthesia.io/previous2024/language_demos/languages_basic/es-CO.mp4"><source type="video/mp4"></video>
+                </div>
+                
+
                 <div class="voiceover__child">
-                    <div class="us">
+                    <div class="language__btn language__btn--1 language__btn--active" data-tab="1">
                         <img src="img/us.png" alt="" height="30px" width="30px">
                         <p>US English</p>
                     </div>
                  
-                   <div class="us">
+                   <div class="language__btn language__btn--2" data-tab="2">
                         <img src="img/german.png" alt="" height="20px" width="30px">
                         <p>German</p>
                    </div>
-                   <div class="us">
+                   <div class="language__btn language__btn--3" data-tab="3">
                         <img src="img/french.png" alt="" height="20px" width="30px">
                         <p>French</p>
                    </div>
-                   <div class="us">
+                   <div class="language__btn language__btn--4" data-tab="4">
                     <img src="img/spanish.png" alt="" height="20px" width="30px">
                     <p>Spanish</p>
                    </div>
@@ -620,30 +650,18 @@
         </section>
 
         <section class="section" id="leader-section">
-            <div class="section__title">
-                <!-- <h1 class="section__description--grey ">EASY UPDATES</h1> -->
-                <h2 class="section__header ">Leader in the AI Video Generator category</h2>
-                <p class="heading-3">Synthesia is the leader in AI Video Generator on G2, the world’s largest and most trusted software marketplace</p>
+            <div class="leader__title">
+                <h2 class="section__header u-margin-bottom-medium">Leader in the AI Video Generator category</h2>
+                <p class="heading-3 u-margin-bottom-medium">Synthesia is the leader in AI Video Generator on G2, the world’s largest and most trusted software marketplace</p>
 
                 <div class="grid">
-                    <div class="grid-1">
-                        <p><i class="material-icons">&#xe250;
-                        </i>Best for Small Business</p>
-                    </div>
-                    <div class="grid-1">
-                        <p><i class="material-icons">&#xe250;
-                        </i>Best for Enterprise</p>
-                    </div>
-                    <div class="grid-1">
-                        <p><i class="material-icons">&#xe250;
-                        </i>Highest User Satisfaction</p>
-                    </div>
-                    <div class="grid-1">
-                        <p><i class="material-icons">&#xe250;
-                        </i>Best for Mid-Market</p>
-                    </div>  
-                </div>
-                <a href="#" class="btn btn--blue">Book demo<i  class='fas'>&#xf061;</i></a>
+                    <p class="heading-1"><i class="material-icons">&#xe250;</i>Best for Small Business</p>
+                    <p class="heading-1"><i class="material-icons">&#xe250;</i>Best for Enterprise</p>
+                    <p class="heading-1"><i class="material-icons">&#xe250;</i>Highest User Satisfaction</p>
+                    <p class="heading-1"><i class="material-icons">&#xe250;</i>Best for Mid-Market</p>
+               </div>
+                
+                <a href="#" class="btn btn--blue u-margin-top-medium">Book demo<i  class='fas'>&#xf061;</i></a>
                 
             </div>
             <img src="img/G2-grid.webp" class="grid-image" alt="grid-image">
@@ -763,7 +781,8 @@
                 </div>
                 <div class="faqs__flex--item">
                     <p class="question heading-1 u-margin-bottom-small">What can you do with synthsia's AI video genarator?<i  class=' fas faqs__arrow--icon'>&#xf061;</i></p>
-                    <p class="answer heading-3">With Synthesia's AI video generator, you can effortlessly create professional-quality videos without the challenges of filming and production. Here are a few examples of what you can do:
+                    <div class="answer">
+                    <p class="heading-3">With Synthesia's AI video generator, you can effortlessly create professional-quality videos without the challenges of filming and production. Here are a few examples of what you can do:
                         <ul class="heading-3">
                             <li><span class="black">Add AI Avatars</span>: Choose from a diverse selection of avatars to make your videos more engaging and inclusive.</li>
                             <li><span class="black">Create Instant Voiceovers</span>: Convert your scripts into high-quality voiceovers in hundreds of natural-sounding AI voices.</li>
@@ -774,6 +793,7 @@
                         </ul>
                         <p class="heading-3">This tool is especially useful for creating training videos, marketing content, and customer service videos, helping you streamline and enhance your video production process.</p>
                     </p>
+                    </div>
                 </div>
             </div>
 
@@ -887,10 +907,18 @@
                     </ul> 
                 </div>               
             </div>  
-            
+            <hr>
             <div class="address">
                 <p>&copy;2024 Synthesia Limited. All rights reserved.</p>
+
+                <div class="social--icons">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class='fab fa-youtube' style='font-size:48px;color:red'></i>
+
+                </div>
             </div>
+            <hr>
 
         </footer>
 

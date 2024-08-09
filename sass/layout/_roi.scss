@@ -9,11 +9,14 @@
 
     .section__header {
         width: 100%;
-        padding: 0 30rem;
+        padding: 0 20rem;
         @include respond(tab-land) {
             padding: 0;
             width: 100%;
         }
+    }
+    .fig {
+        font-size: 4rem;
     }
 }
 
