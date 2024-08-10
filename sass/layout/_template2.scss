@@ -40,7 +40,7 @@
     iframe {
         border-radius: 2rem;
         @include respond(phone) {
-            width: fit-content;
+            width: 100%;
             
         }
     }

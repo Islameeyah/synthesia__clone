@@ -6,6 +6,11 @@
   color: $color-white;
   background: url(/img/template-section-bg.webp);
 
+
+  // @include respond(tab-land) {
+  //   padding: 2rem 5rem;
+  // }
+
   
 
   &--span {
@@ -40,7 +45,8 @@
   @include respond(phone) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 5rem;
+    margin-top: -20rem;
+    // margin-bottom: 5rem;
   }
 
 
@@ -81,7 +87,7 @@
   justify-content: space-between;
   padding: 2rem 0;
 
-  border-top: 1px solid beige;
+  border-top: 1px solid grey;
 
   @include respond(tab-land) {
     border-top: none;
