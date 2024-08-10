@@ -66,8 +66,14 @@
             display: flex;
             text-transform: uppercase;
 
+            @include respond(phone) {
+                width: 15rem;
+       
+            }
+
             img {
                 margin-right: .5rem;
+
             }
             &--active {
                 background: black;
@@ -94,6 +100,15 @@
         display: flex;
         width: 90%;
         justify-content: space-between;
+
+        @include respond(phone) {
+            bottom: -100px;
+            gap: 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            // width: 100%;
+       
+        }
     }
 
 }
