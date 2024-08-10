@@ -468,6 +468,19 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+@media only screen and (max-width: 75em) {
+  .footer__list-items {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__list-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 5rem;
+  }
+}
 .footer__list-items span {
   font-size: 2rem;
 }
@@ -476,19 +489,56 @@ body {
   width: 20%;
   font-size: 1.5rem;
 }
+@media only screen and (max-width: 75em) {
+  .display1 {
+    width: 100%;
+  }
+}
 
 .img-icon {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+@media only screen and (max-width: 75em) {
+  .img-icon {
+    justify-content: center;
+  }
 }
 
 .address {
   width: 100%;
-  font-size: 30px;
   display: inline-flex;
   justify-content: space-between;
   padding: 2rem 0;
+  border-top: 1px solid beige;
+}
+@media only screen and (max-width: 75em) {
+  .address {
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.address p {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+.address .social--icons {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+  font-size: 30px;
+}
+@media only screen and (max-width: 75em) {
+  .address .social--icons {
+    width: 20%;
+    margin-top: 2rem;
+  }
 }
 
 .section-9 {
@@ -496,6 +546,11 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+@media only screen and (max-width: 75em) {
+  .section-9 {
+    flex-direction: column-reverse;
+  }
 }
 
 .container--wrap {
@@ -560,6 +615,12 @@ body {
   display: flex;
   margin: 10rem 15rem;
 }
+@media only screen and (max-width: 75em) {
+  #leader-section {
+    flex-direction: column;
+    margin: 5rem;
+  }
+}
 #leader-section .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -574,12 +635,23 @@ body {
 #leader-section .leader__title {
   width: 45%;
 }
+@media only screen and (max-width: 75em) {
+  #leader-section .leader__title {
+    width: 100%;
+  }
+}
 
 .grid-image {
   height: 70vh;
   width: 45vw;
   margin-left: 3rem;
   justify-content: center;
+}
+@media only screen and (max-width: 75em) {
+  .grid-image {
+    width: 100%;
+    margin-top: 2rem;
+  }
 }
 
 #integration-section {

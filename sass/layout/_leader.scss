@@ -2,6 +2,11 @@
     display: flex;
     margin: 10rem 15rem;
 
+    @include respond(tab-land) {
+        flex-direction: column;
+        margin: 5rem;
+      }
+
     
 
     .grid{
@@ -23,6 +28,10 @@
     }
     .leader__title {
         width: 45%;
+
+        @include respond(tab-land) {
+            width: 100%;
+          }
     }
 }
 
@@ -33,5 +42,10 @@
     width: 45vw;
     margin-left: 3rem;
     justify-content: center;
+
+    @include respond(tab-land) {
+        width: 100%;
+        margin-top: 2rem;
+      }
 }
 
