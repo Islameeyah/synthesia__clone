@@ -1,11 +1,22 @@
 #leader-section {
     display: flex;
     margin: 10rem 15rem;
+    flex-direction: column;
+
+    @include respond(tab-land) {
+        margin: 5rem 2rem;
+      }
+    
+
+    .leader1 {
+        display: flex;
+    
 
     @include respond(tab-land) {
         flex-direction: column;
-        margin: 5rem 2rem;
+        // margin: 5rem 2rem;
       }
+    }
 
     
 

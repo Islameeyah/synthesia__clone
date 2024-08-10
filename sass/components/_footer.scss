@@ -4,32 +4,26 @@
   flex-wrap: wrap;
   padding: 10rem 5rem;
   color: $color-white;
-  background: url(/img/template-section-bg.webp);
-
-
-  // @include respond(tab-land) {
-  //   padding: 2rem 5rem;
-  // }
-
-  
+  background: url(/img/template-section-bg.webp); 
 
   &--span {
-      color: $color-secondary-light;
+    color: $color-secondary-light;
   }
+  
 
-    & ul {
+  & ul {
     list-style: none;
 
     li {
-        color: $color-white;
-        font-size: 1.5rem;
-        &:hover{
-            color: $color-secondary-light;
-        }
+      color: $color-white;
+      font-size: 1.5rem;
+
+      &:hover{
+        color: $color-secondary-light;
+
+      }
     }
-
-
-}
+  }
 
 &__list-items{
   width: 70%;
@@ -46,19 +40,17 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: -20rem;
-    // margin-bottom: 5rem;
   }
 
 
   span {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 }
 }
 .display1{
   width: 20%;
   font-size: 1.5rem;
-  // align-items: center;
 
   @include respond(tab-land) {
     width: 100%;
@@ -78,8 +70,6 @@
   }
   
 }
-
-
 
 .address{
   width: 100%;
@@ -127,9 +117,3 @@
       }
       
   }
-// .p2 {
-//   @include respond(tab-land) {
-//     font-size: 2rem;
-//     padding: 0 5rem;
-//   }
-// }

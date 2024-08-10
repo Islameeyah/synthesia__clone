@@ -42,13 +42,7 @@ body {
         @include respond(tab-port) {
           // line-height: 1;
       }
-        
-      
-    
 
-    // @include respond(tab-port) {
-    //     padding: 0;
-    // }
 }
 
 ::selection {

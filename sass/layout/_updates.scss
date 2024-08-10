@@ -52,17 +52,17 @@
         // height: 20vh;
         width: 50%;
        
-            @include respond(phone) {
-                margin-top: 2rem;
-                width: 100%;
-            }
-            @include respond(tab-port) {
-                margin-top: 2rem;
-                width: 100%;
-            }
-            // width: 702px;
-            // height: 395px;
-            border-radius: 10px;
+        @include respond(phone) {
+            margin-top: 2rem;
+            width: 100%;
+        }
+        @include respond(tab-port) {
+            margin-top: 2rem;
+            width: 100%;
+        }
+        // width: 702px;
+        // height: 395px;
+        border-radius: 10px;
         
 
     }   

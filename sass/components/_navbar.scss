@@ -9,23 +9,21 @@
 
   &__logo {
 
-      width: 10%;
+    width: 10%;
  
-      img {
-        width: 10rem;
+    img {
+      width: 10rem;
 
-        @include respond(tab-port) {
-          margin-right: 2rem;
+      @include respond(tab-port) {
+        margin-right: 2rem;
 
+      }
+    }       
   }
-    }
-        
-        
-}
     
 
     // @include respond(tab-land) {
-      #nav__button {
+   #nav__button {
           display: none;
 
            @include respond(tab-port) {
