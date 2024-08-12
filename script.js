@@ -3,8 +3,11 @@ const linkBtns = document.querySelectorAll('#links__responsive')
 const hamburgerBtn = document.getElementById('nav__button')
 
 hamburgerBtn.addEventListener('click', (e) => {
+  console.log('something')
   e.preventDefault()
-  linkBtns.forEach(btns => {btns.classList.toggle('toggle')})
+  linkBtns.forEach(btns => {
+   return btns.classList.toggle('toggle')
+  })
 })
 
 

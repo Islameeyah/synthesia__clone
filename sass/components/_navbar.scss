@@ -3,8 +3,21 @@
   background-color: #fff;
   align-items: center;
   height: 9rem;
-  padding: 0 15rem;
+  // padding: 0 15rem;
   font-size: $default-font-size;
+
+  @include respond(tab-port) {
+    // margin-right: 2rem;
+    padding: 0 1.5rem;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+
+  }
+
+  li a {
+    color: black;
+  }
  
 
   &__logo {
@@ -13,21 +26,16 @@
  
     img {
       width: 10rem;
+      margin-left: 3rem;
 
-      @include respond(tab-port) {
-        margin-right: 2rem;
-
-      }
     }       
   }
     
+  #nav__button {
+    // display: none;
 
-    // @include respond(tab-land) {
-   #nav__button {
-          display: none;
-
-           @include respond(tab-port) {
-           display: flex;
+    @include respond(tab-port) {
+    display: flex;
     }
       }
       
@@ -46,6 +54,11 @@
         display: flex;
         justify-content: space-between;
 
+        @include respond (tab-land) {
+              display: none;
+        
+      }
+
    
       
 
@@ -60,20 +73,25 @@
         
     }
 
+    // @include respond (tab-land) {
+    //   &__cta>*:not(:last-child) {
+    //       display: none;
+    //   }
+
     @include respond (tab-land) {
-      &__cta>*:not(:last-child) {
-          display: none;
+      &__cta{
+          // display: none;
       }
   }
 .fa-bars {
   font-size: 2rem;
 }
 
-& button {
-  border: none;
-  outline: none;
-  background: transparent;
-}
+// & button {
+//   border: none;
+//   outline: none;
+//   background: transparent;
+// }
 }
 
 .dropdown-content {
@@ -153,11 +171,12 @@
     grid-template-columns: repeat(4, 1fr);
     // background: $color-white;
     position: absolute;
-    top: 100%;
+    top: 10%;
     width: 100%;
     right: 0;
     margin: 0;
     align-items: flex-start;
+    // z-index: 999;
 
     .dropdown-content {
       top: 100%;
@@ -166,16 +185,19 @@
       z-index: -999;
       background: $color-secondary-light;
 
-      // .dropdown-top {
-
-      // }
+     
     }
 
     .dropdown-top {
-      &h4 {
-        padding-top: 25%;
-      }
+      display: flex;
+      flex-direction: column;
+    }
+
+    // .dropdown-top {
+    //   &h4 {
+    //     padding-top: 25%;
+    //   }
 
       
-    }
+    // }
 }
