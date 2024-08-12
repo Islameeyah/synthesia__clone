@@ -452,10 +452,12 @@ body {
   background: #fff;
   position: absolute;
 }
-.toggle .dropdown-content .dropdown-top {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+@media only screen and (max-width: 56.25em) {
+  .toggle .dropdown-content .dropdown-top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .toggle .dropdown-content .dropdown-bottom {
   display: none;

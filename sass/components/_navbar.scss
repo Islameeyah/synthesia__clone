@@ -199,10 +199,12 @@
       position: absolute;
       // display: flex;
       // flex-direction: column;
-      .dropdown-top {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+      @include respond(tab-port) {
+        .dropdown-top {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
       }
       .dropdown-bottom{
         display: none;
