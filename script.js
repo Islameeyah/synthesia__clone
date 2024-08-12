@@ -148,3 +148,35 @@ document.addEventListener("DOMContentLoaded", function(){
   })
 })
 
+
+// Drop down
+
+const navbarIcon = document.querySelectorAll('.navbar--icon');
+
+const  navContent = document.querySelectorAll('.dropdown-content');
+
+// navbarIcon.forEach((icon, index) => {
+//   icon.addEventListener('click', function(e) {
+//     e.preventDefault();
+
+//     // close all dropdowns exceptt the one that was clicked
+
+//     navContent.forEach((iconClicked, i) => {
+//       if (i !== index) {
+//         iconClicked.style.display = 'none';
+//         navbarIcon[i].style.transform = 'rotate(0deg)'
+//       }
+//     })
+
+//     // Toggle the display of the corresponding dropdown-content section
+
+//     const iconClicked = navContent[index];
+//     if (iconClicked.style.display === 'block'){
+//       iconClicked.style.display = 'none'
+//     } else {
+//       iconClicked.style.display ='block'
+//       icon.style.transform = 'rotate(-180deg)'
+//     }
+//   })
+// })
+

@@ -15,9 +15,9 @@
 
   }
 
-  li a {
-    color: black;
-  }
+  // li a {
+  //   color: black;
+  // }
  
 
   &__logo {
@@ -185,13 +185,15 @@
     .navbar__list {
       position: relative;
       width: 100% ;
+      height: 100%;
       // z-index: 1000;
     }
 
     .dropdown-content {
       // top: 100%;
       width: 100%;
-      margin-left: 3rem;
+      // height: 70%;
+      // margin-left: 3rem;
       z-index: 1000;
       background: $color-white;
       position: absolute;
@@ -200,11 +202,15 @@
       .dropdown-top {
         display: flex;
         flex-direction: column;
+        width: 100%;
+      }
+      .dropdown-bottom{
+        display: none;
       }
 
      
     }
-
+    
 
     
 
