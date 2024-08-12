@@ -1,4 +1,4 @@
-
+'use strict'
 const linkBtns = document.querySelectorAll('#links__responsive')
 const hamburgerBtn = document.getElementById('nav__button')
 
@@ -125,6 +125,26 @@ document.addEventListener('DOMContentLoaded',function() {
         faqsIcon.style.transform= 'rotate(-90deg)';
       }
     })
+  })
+});
+
+
+document.addEventListener("DOMContentLoaded", function(){
+  const video = document.querySelector('.html-video');
+  const playBtn = document.querySelector('.mute__button');
+
+  const text = document.querySelector('.mute__text');
+
+  playBtn.addEventListener('click', function(e) {
+    if(video.muted) {
+      video.muted= false;
+      playBtn.src = '/img/playbutton.svg';
+      text.textContent = 'mute';
+    } else {
+      video.muted = true;
+      playBtn.src = '/img/muted-dark.svg';
+      text.textContent ='listen';
+    }
   })
 })
 

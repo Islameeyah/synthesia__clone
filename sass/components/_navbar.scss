@@ -32,7 +32,7 @@
   }
     
   #nav__button {
-    // display: none;
+    display: none;
 
     @include respond(tab-port) {
     display: flex;
@@ -69,6 +69,7 @@
         }
         .navbar__btn a {
           color: $color-white;
+          background: $color-secondary-light;
         }
         
     }
@@ -78,20 +79,20 @@
     //       display: none;
     //   }
 
-    @include respond (tab-land) {
-      &__cta{
-          // display: none;
-      }
+    @include respond (big-desktop) {
+      
+          display: none;
+      
   }
 .fa-bars {
   font-size: 2rem;
 }
 
-// & button {
-//   border: none;
-//   outline: none;
-//   background: transparent;
-// }
+& button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
 }
 
 .dropdown-content {
@@ -167,8 +168,11 @@
 }
 
 .toggle {
-  display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-direction: column;
+  background: $color-white;
+  // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
     // background: $color-white;
     position: absolute;
     top: 10%;
@@ -178,20 +182,31 @@
     align-items: flex-start;
     // z-index: 999;
 
+    .navbar__list {
+      position: relative;
+      width: 100% ;
+      // z-index: 1000;
+    }
+
     .dropdown-content {
-      top: 100%;
+      // top: 100%;
       width: 100%;
       margin-left: 3rem;
-      z-index: -999;
-      background: $color-secondary-light;
+      z-index: 1000;
+      background: $color-white;
+      position: absolute;
+      // display: flex;
+      // flex-direction: column;
+      .dropdown-top {
+        display: flex;
+        flex-direction: column;
+      }
 
      
     }
 
-    .dropdown-top {
-      display: flex;
-      flex-direction: column;
-    }
+
+    
 
     // .dropdown-top {
     //   &h4 {
